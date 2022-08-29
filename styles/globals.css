@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	/* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+	font-family: "Poppins";
+	background-color: #0f1c26;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.primary_bg {
+	background-color: #ff9138;
+}
+.primary_color {
+	color: white;
+}
+.highlight_bg {
+	background-color: #ff9138;
+	color: white;
+}
+.highlight_color {
+	color: #fff;
+}
+.border_highlight {
+	border-color: #09bc8a;
+}
+
+.embla__slide {
+	flex: 0 0 100%;
+}
+
+canvas {
+	height: 100%;
+}
+
+@layer base {
+	h1,
+	h2 {
+		font-family: "Montserrat";
+		color: #27ae60;
+		font-weight: semibold;
+	}
+}
+
+@layer components {
+	/* temp start */
+	.slider_btn {
+		@apply outline-none cursor-pointer bg-transparent touch-manipulation absolute z-[1] top-2/4 -translate-y-1/2 border-0 w-[30px] h-[30px] flex justify-center items-center fill-slate-700 p-0 disabled:opacity-30 disabled:cursor-default text-white font-bold text-[60px];
+	}
+	/* temp end */
+
+	.linksContainer_link {
+		@apply border-[1px] rounded uppercase px-3 py-1 first:ml-2 first:mt-2 hover:text-sm hover:border-orange-300;
+	}
+	.custom_scrollbar {
+		@apply scrollbar-thin scrollbar-thumb-yellow-500 scrollbar-track-yellow-300;
+	}
+	.menu_list {
+		@apply flex lg:block w-full lg:w-auto justify-center mr-4 mb-4 lg:mb-0;
+	}
+	.menu_link {
+		@apply w-full md:w-2/4 lg:w-auto text-center lg:text-start lg:text-sm px-4 md:px-0  py-4 lg:py-0 border-2 lg:border-0 hover:text-color-light hover:cursor-pointer hover:border-b-[1px] transition-all duration-200 tracking-widest;
+	}
+
+	.user_menu_link {
+		@apply flex h-5 items-center w-full px-4 space-x-4 uppercase tracking-wider font-semibold text-sm;
+	}
+
+	.footer_link {
+		@apply capitalize py-1 px-4 xl:text-center xl:px-0 border-2 border-color-border rounded ml-3 mb-3 xl:w-1/3  hover:bg-color-orange hover:text-black;
+	}
+}

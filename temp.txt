@@ -1,0 +1,18 @@
+// dashboard
+- header - 4 linked info section, - a bar chart, - a map chart - 6 tables
+
+// movies
+- elasticsearch input field, 1 table containing checkbox, linked button edit, delete button with function, - pagination
+
+// add movie
+- clicking on a input field corresponding array of data from database will be shown and then if i select a name it will be added on the input and subtract from the table
+
+//add episodes
+- 1st select series name and click generate then seasons select box will populate, then select a season and click generate episodes then episodes select box will populate
+
+// add page
+need to implement a text editor
+
+
+** take away ** 
+1, need to learn to implement a bar chart, a map chart, text editor, table containing checkbox, elasticsearch
